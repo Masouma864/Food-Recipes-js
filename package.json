@@ -16,6 +16,11 @@
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Masouma864/Food-Recipes-js.git"
+  },
+  "homepage": "https://github.com/Masouma864/Food-Recipes-js#readme",
   "dependencies": {
     "abab": "^2.0.6",
     "abbrev": "^1.1.1",
@@ -597,7 +602,10 @@
     "zwitch": "^1.0.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "watch": "jest --watchAll",
+    "start": "webpack-dev-server --config webpack.config.js --open",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
